@@ -5,12 +5,13 @@ Course Info:
   Semester: Spring 2021
   
 Members:
-  Project Group D
+# Project Group D
   ---------------
   Chris Odom
   Juwuan Turner-Howard
   Kyle Nishimuta
   Sarah Pierson
+
 --------------------------------------------------------------------
 
 This is the repository for CS 499 Project Group D, for the project
