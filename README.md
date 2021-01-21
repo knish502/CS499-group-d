@@ -7,7 +7,7 @@ Course:   CS 499 - Senior Design Project
 
 Semester: Spring 2021
   
-Members:
+
 # Project Group D
   ---------------
   Chris Odom
