@@ -1,8 +1,8 @@
-# CS499-group-d ----------------------------------------------------
+# CS499 -----------------------------------------------------------
 Course Info:
-  School:   University of Alabama in Huntsville
-  Course:   CS 499 - Senior Design Project
-  Semester: Spring 2021
+School:   University of Alabama in Huntsville
+Course:   CS 499 - Senior Design Project
+Semester: Spring 2021
   
 Members:
 # Project Group D
