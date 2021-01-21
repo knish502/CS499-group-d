@@ -16,7 +16,8 @@ Course Scheduling System. This repository will be used to share data
 and collaborate on the project efficiently between the members.
 
 ## Helpful commands:
-  
+These are commands that are helpful if you're using the console interface.
+
 * `git clone <repository URL>` -> copies files from repository into user's computer
   
 * `git pull` -> updates user's folder to match the contents of the remote repository
