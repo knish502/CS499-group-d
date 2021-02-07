@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version 'rapid_prototype'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.poi', name: 'poi', version: '3.17'
+    implementation 'org.apache.poi:poi-ooxml:4.0.0'
+}
