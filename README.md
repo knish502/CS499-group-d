@@ -19,7 +19,7 @@ and collaborate on the project efficiently between the members.
 These are commands that are helpful if you're using the console interface.	
 * `git clone <repository URL>` -> copies files from repository into user's computer	
 * `git pull origin [branch name]` -> updates user's folder to match the contents of the remote repository	
-* `git add . `-> adds all items in user's version of repo to temporary location, to prep for updating cloud version. To only add a single file, change '.' with the name of the file.
+* `git add . `-> adds all items in user's version of repo to temporary location, to prep for updating cloud version. To only add a single file, replace '.' with the name of the file.
 * `git commit -m "My message"` -> used after "add" command, above. Stashes any changes you have made to prepare for modifying cloud version. Message is required.	
 * `git push` -> updates project version on the cloud. Be sure to commit beforehand. _Cannot be undone._	
 
