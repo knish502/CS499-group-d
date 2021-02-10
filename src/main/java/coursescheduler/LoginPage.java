@@ -1,4 +1,4 @@
-package course_scheduler;
+package coursescheduler;
 
 import java.awt.event.KeyEvent;
 
@@ -30,28 +30,22 @@ public class LoginPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-<<<<<<< HEAD
-=======
         passwordField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordFieldActionPerformed(evt);
             }
         });
->>>>>>> TSK-14 Solidify structure and view of login page.
         passwordField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 passwordFieldKeyPressed(evt);
             }
         });
 
-<<<<<<< HEAD
-=======
         emailField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 emailFieldActionPerformed(evt);
             }
         });
->>>>>>> TSK-14 Solidify structure and view of login page.
         emailField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 emailFieldKeyPressed(evt);
@@ -110,10 +104,7 @@ public class LoginPage extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(passwordLabel)
                         .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-<<<<<<< HEAD
-=======
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
->>>>>>> TSK-14 Solidify structure and view of login page.
                 .addComponent(createAccountLabel)
                 .addContainerGap(252, Short.MAX_VALUE))
         );
@@ -121,8 +112,6 @@ public class LoginPage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-=======
     private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailFieldActionPerformed
@@ -131,7 +120,6 @@ public class LoginPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordFieldActionPerformed
 
->>>>>>> TSK-14 Solidify structure and view of login page.
     private void passwordFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordFieldKeyPressed
         if(evt.getKeyCode() == KeyEvent.VK_ENTER) {
             // TODO: Trigger login function.
@@ -143,7 +131,7 @@ public class LoginPage extends javax.swing.JFrame {
             // TODO: Trigger login function.
         }
     }//GEN-LAST:event_emailFieldKeyPressed
-    
+
     private void createAccountLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_createAccountLabelMouseClicked
         // TODO: Transition to AccountCreationPage.    
     }//GEN-LAST:event_createAccountLabelMouseClicked

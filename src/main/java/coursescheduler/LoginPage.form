@@ -65,10 +65,7 @@
                       <Component id="passwordField" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-<<<<<<< HEAD
-=======
               <EmptySpace max="-2" attributes="0"/>
->>>>>>> TSK-14 Solidify structure and view of login page.
               <Component id="createAccountLabel" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="252" max="32767" attributes="0"/>
           </Group>
@@ -78,19 +75,14 @@
   <SubComponents>
     <Component class="javax.swing.JPasswordField" name="passwordField">
       <Events>
-<<<<<<< HEAD
-=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passwordFieldActionPerformed"/>
->>>>>>> TSK-14 Solidify structure and view of login page.
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passwordFieldActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="passwordFieldKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="emailField">
       <Events>
-<<<<<<< HEAD
-=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailFieldActionPerformed"/>
->>>>>>> TSK-14 Solidify structure and view of login page.
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="emailFieldKeyPressed"/>
       </Events>
     </Component>
