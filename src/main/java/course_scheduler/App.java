@@ -3,6 +3,9 @@
  */
 package course_scheduler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -10,7 +13,7 @@ public class App {
 
     public static void main(String[] args) {
         //System.out.println(new App().getGreeting());
-        NewJFrame frame = new NewJFrame();
+        MainMenu frame = new MainMenu();
         String[] test = {"Test"};
         frame.main(test);
     }
