@@ -7,7 +7,7 @@
  */
 
 plugins {
-    // plugin to add support for Java
+    // plugin to add support for Java.
     id 'java'
 
     // plugin to add support for building a CLI application.
@@ -16,7 +16,7 @@ plugins {
     // plugin to add support for quality checks on Java source files.
     id 'checkstyle'
 
-    // plugin to add support for automatic formatting
+    // plugin to add support for automatic formatting.
     id 'com.github.sherter.google-java-format' version '0.9'
 }
 
@@ -27,8 +27,6 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.googlejavaformat:google-java-format:1.9'
-
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
 
@@ -43,20 +41,21 @@ application {
 }
 
 checkstyle {
+    // Set checkstyle version.
     toolVersion '8.40';
 }
 
 checkstyleMain {
+    // Set checkstyleMain to run after verifyGoogleJavaFormat.
     dependsOn(tasks.verifyGoogleJavaFormat)
 }
 
 checkstyleTest {
+    // Set checkstyleTest to run after verifyGoogleJavaFormat.
     dependsOn(tasks.verifyGoogleJavaFormat)
 }
 
 verifyGoogleJavaFormat {
+    // Set verifyGoogleJavaFormat to run after googleJavaFormat.
     dependsOn(tasks.googleJavaFormat)
 }
-
-//checkstyleMain.dependsOn(tasks.googleJavaFormat)
-//verifyGoogleJavaFormat.dependsOn(tasks.googleJavaFormat)
