@@ -58,3 +58,7 @@ verifyGoogleJavaFormat {
     // Set verifyGoogleJavaFormat to run after googleJavaFormat.
     dependsOn(tasks.googleJavaFormat)
 }
+
+checkstyle {
+    toolVersion '8.40';
+}
