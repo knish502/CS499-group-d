@@ -1,5 +1,6 @@
 package coursescheduler;
 
+<<<<<<< HEAD
 /** Entry-point for Course Scheduler system. */
 public class CourseScheduler {
   public static void main(String[] args) {
@@ -9,5 +10,12 @@ public class CourseScheduler {
             new LoginPage().setVisible(true);
           }
         });
+=======
+/**
+ * Entry-point for Course Scheduler system.
+ */
+public class CourseScheduler {
+  public static void main(String[] args) {
+>>>>>>> TSK-23 Setup Gradle Checkstyle formatting.
   }
 }

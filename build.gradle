@@ -13,11 +13,16 @@ plugins {
     // plugin to add support for building a CLI application.
     id 'application'
 
+<<<<<<< HEAD
     // plugin to add support for quality checks on Java source files.
     id 'checkstyle'
 
     // plugin to add support for automatic formatting.
     id 'com.github.sherter.google-java-format' version '0.9'
+=======
+    // Apply the checkstyle plugin to add support for quality checks on Java source files.
+    id 'checkstyle'
+>>>>>>> TSK-23 Setup Gradle Checkstyle formatting.
 }
 
 repositories {
@@ -58,4 +63,8 @@ checkstyleTest {
 verifyGoogleJavaFormat {
     // Set verifyGoogleJavaFormat to run after googleJavaFormat.
     dependsOn(tasks.googleJavaFormat)
+}
+
+checkstyle {
+    toolVersion '8.40';
 }
