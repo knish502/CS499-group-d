@@ -14,11 +14,23 @@ public class createAccountJpanel extends javax.swing.JPanel {
     String tempEmail = "";
     String tempPassword = "";
     String tempRole = "";
+    PanelManager controller;
+    String page = "CREATE_ACCOUNT";
     /**
      * Creates new form createAccountJpanel
      */
     public createAccountJpanel() {
         initComponents();
+    }
+    
+    public void setController(PanelManager input)
+    {
+        controller = input;
+    }
+    
+    public String returnPage()
+    {
+        return page;
     }
 
     /**
