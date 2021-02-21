@@ -59,15 +59,15 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="addCourseError_College" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="addCourseError_Professor" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="addCourseError_ID" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="addCourseError_Name" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="addCourseError_Room" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="addCourseErrorCollege" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="addCourseErrorProfessor" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="addCourseErrorId" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="addCourseErrorName" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="addCourseErrorRoom" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="addCourseError_Days" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
-                          <Component id="addCourseError_Seats" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
-                          <Component id="addCourseError_Times" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorDays" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorSeats" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorTimes" min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -85,13 +85,13 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
-                  <Component id="addCourseError_College" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
+                  <Component id="addCourseErrorCollege" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
                   <Component id="addCourseCollegeCombo" alignment="2" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
-                  <Component id="addCourseError_ID" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
+                  <Component id="addCourseErrorId" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
                   <Component id="addCourseIDInput" alignment="2" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="2" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -103,9 +103,9 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="addCourseError_Professor" min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="addCourseErrorProfessor" min="-2" pref="19" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="addCourseError_Room" min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="addCourseErrorRoom" min="-2" pref="19" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="163" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -129,19 +129,19 @@
                       <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="addCourseTimesCombo" alignment="2" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel6" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCourseError_Times" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorTimes" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="addCourseDaysCombo" alignment="2" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCourseError_Days" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorDays" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="addCourseSeatsInput" alignment="2" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel8" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCourseError_Seats" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="addCourseErrorSeats" alignment="2" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -149,7 +149,7 @@
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="101" pref="101" max="-2" attributes="0"/>
-              <Component id="addCourseError_Name" min="-2" pref="19" max="-2" attributes="0"/>
+              <Component id="addCourseErrorName" min="-2" pref="19" max="-2" attributes="0"/>
               <EmptySpace min="295" pref="335" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -311,17 +311,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="addCourseErrorDisplay1">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_College">
+    <Component class="javax.swing.JLabel" name="addCourseErrorCollege">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Professor">
+    <Component class="javax.swing.JLabel" name="addCourseErrorProfessor">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_ID">
+    <Component class="javax.swing.JLabel" name="addCourseErrorId">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Name">
+    <Component class="javax.swing.JLabel" name="addCourseErrorName">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Days">
+    <Component class="javax.swing.JLabel" name="addCourseErrorDays">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Room">
+    <Component class="javax.swing.JLabel" name="addCourseErrorRoom">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
@@ -346,9 +346,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="addCourseNameInput">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Seats">
+    <Component class="javax.swing.JLabel" name="addCourseErrorSeats">
     </Component>
-    <Component class="javax.swing.JLabel" name="addCourseError_Times">
+    <Component class="javax.swing.JLabel" name="addCourseErrorTimes">
     </Component>
   </SubComponents>
 </Form>
