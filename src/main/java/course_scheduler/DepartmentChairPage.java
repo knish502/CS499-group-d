@@ -10,10 +10,18 @@ package course_scheduler;
  * @author evilc
  */
 public class DepartmentChairPage extends javax.swing.JPanel {
+    String page = "DEPARTMENT_CHAIR";
+    PanelManager controller;
 
-    /**
-     * Creates new form DepartmentChairPage
-     */
+    public void setController(PanelManager input)
+    {
+        controller = input;
+    }
+    
+    public String returnPage()
+    {
+        return page;
+    }
     public DepartmentChairPage() {
         initComponents();
     }
@@ -90,29 +98,29 @@ public class DepartmentChairPage extends javax.swing.JPanel {
 
         currentCoursesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "College", "ID", "Name", "Professor", "Room(s)", "Times", "Days"
+                "College", "ID", "Name", "Professor", "Room(s)", "Times", "Days", "Seats"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, true, true
+                false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {

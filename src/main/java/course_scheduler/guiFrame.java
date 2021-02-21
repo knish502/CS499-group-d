@@ -12,14 +12,30 @@ package course_scheduler;
 public class guiFrame extends javax.swing.JFrame {
     LoginPage loginPagePanel = new LoginPage();
     createAccountJpanel createAccountPanel = new createAccountJpanel();
-    PanelManager controller = new PanelManager(loginPagePanel, createAccountPanel);
+    AddCourseDepartmentChair addCourseDepartmentChairPanel = new AddCourseDepartmentChair();
+    AddCoursePageFaculty addCourseFacultyPanel = new AddCoursePageFaculty();
+    DepartmentChairPage departmentChairPanel = new DepartmentChairPage();
+    RegistrarPage registrarPanel = new RegistrarPage();
+    EditCourse editCoursePanel = new EditCourse();
+    FacultyPage facultyPanel = new FacultyPage();
+    RemoveCoursePage removeCoursePanel = new RemoveCoursePage();
+    
+    PanelManager controller = new PanelManager(loginPagePanel, createAccountPanel, addCourseDepartmentChairPanel, 
+            addCourseFacultyPanel,editCoursePanel, registrarPanel, facultyPanel,
+            departmentChairPanel, removeCoursePanel);
     /**
      * Creates new form guiFrame
      */
     public guiFrame() {
         add(loginPagePanel);
         add(createAccountPanel);
-        loginPagePanel.show();
+        add(addCourseDepartmentChairPanel);
+        add(addCourseFacultyPanel);
+        add(departmentChairPanel);
+        add(registrarPanel);
+        add(editCoursePanel);
+        add(facultyPanel);
+        add(removeCoursePanel);
         initComponents();
     }
 
@@ -41,7 +57,7 @@ public class guiFrame extends javax.swing.JFrame {
         jLabel1.setText("DEBUG:");
         getContentPane().add(jLabel1);
 
-        debugCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "LOGIN", "CREATE_ACCOUNT", "MAIN_MENU", "ADD_COURSE", "REMOVE_COURSE", "EDIT_COURSE", "SCHEDULE_GENERATOR", "INPUT_FILE" }));
+        debugCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "LOGIN", "CREATE_ACCOUNT", "ADD_COURSE_DEPARTMENT_CHAIR", "ADD_COURSE_FACULTY", "REMOVE_COURSE", "EDIT_COURSE", "SCHEDULE_GENERATOR", "INPUT_FILE", "DEPARTMENT_CHAIR", "FACULTY", "REGISTRAR" }));
         debugCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 debugComboActionPerformed(evt);
