@@ -10,10 +10,18 @@ package course_scheduler;
  * @author evilc
  */
 public class AddCoursePageFaculty extends javax.swing.JPanel {
+    String page = "ADD_COURSE_FACULTY";
+    PanelManager controller;
 
-    /**
-     * Creates new form AddCoursePage
-     */
+    public void setController(PanelManager input)
+    {
+        controller = input;
+    }
+    
+    public String returnPage()
+    {
+        return page;
+    }
     public AddCoursePageFaculty() {
         initComponents();
     }
@@ -49,7 +57,8 @@ public class AddCoursePageFaculty extends javax.swing.JPanel {
                 {"Professor:", null},
                 {"Room(s):", null},
                 {"Times:", null},
-                {"Days:", null}
+                {"Days:", null},
+                {"Seats:", null}
             },
             new String [] {
                 "Course Info", ""
@@ -100,8 +109,8 @@ public class AddCoursePageFaculty extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(23, 23, 23)
                 .addComponent(allCoursesCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addCourseSubmitButton)

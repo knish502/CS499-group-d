@@ -13,18 +13,54 @@ public class PanelManager
 {
         public enum panel
     { 
-        LOGIN, CREATE_ACCOUNT, MAIN_MENU, FILE_INPUT, ADD_COURSE, REMOVE_COURSE, EDIT_COURSE, SCHEDULE_GENERATOR, DEBUG
+        LOGIN, CREATE_ACCOUNT, MAIN_MENU, FILE_INPUT, ADD_COURSE_DEPARTMENT_CHAIR, 
+        ADD_COURSE_FACULTY, REMOVE_COURSE, EDIT_COURSE, SCHEDULE_GENERATOR, DEBUG, 
+        DEPARTMENT_CHAIR, FACULTY, REGISTRAR
+        
     }
     
     //All pages must be defined here and also passed into the default constructor below:
     LoginPage loginPanel;
     createAccountJpanel createAccountPanel;
-    public PanelManager(LoginPage loginInput, createAccountJpanel createAccountInput) //Default constructor
+    AddCourseDepartmentChair addCourseDepartmentChairPanel;
+    AddCoursePageFaculty addCourseFacultyPanel;
+    DepartmentChairPage departmentChairPanel;
+    RegistrarPage registrarPanel;
+    EditCourse editCoursePanel;
+    FacultyPage facultyPanel;
+    RemoveCoursePage removeCoursePanel;
+    
+    public PanelManager(LoginPage loginInput, createAccountJpanel createAccountInput, AddCourseDepartmentChair addCourseDepartmentChairInput, 
+            AddCoursePageFaculty addCoursePageFacultyInput, EditCourse editCoursePageInput, RegistrarPage registrarPageInput, FacultyPage facultyPageInput,
+            DepartmentChairPage departmentChairPageInput, RemoveCoursePage removeCourseInput) //Default constructor
     {
         loginPanel = loginInput;
         createAccountPanel = createAccountInput;
+        addCourseDepartmentChairPanel = addCourseDepartmentChairInput;
+        addCourseFacultyPanel = addCoursePageFacultyInput;
+        departmentChairPanel = departmentChairPageInput;
+        facultyPanel = facultyPageInput;
+        registrarPanel = registrarPageInput;
+        editCoursePanel = editCoursePageInput;
+        removeCoursePanel = removeCourseInput;
+        
         loginPanel.setController(this);
         createAccountPanel.setController(this);
+        addCourseDepartmentChairPanel.setController(this);
+        addCourseFacultyPanel.setController(this);
+        departmentChairPanel.setController(this);
+        facultyPanel.setController(this);
+        registrarPanel.setController(this);
+        editCoursePanel.setController(this);
+        removeCoursePanel.setController(this);
+        
+        addCourseDepartmentChairPanel.hide();
+        addCourseFacultyPanel.hide();
+        departmentChairPanel.hide();
+        facultyPanel.hide();
+        registrarPanel.hide();
+        editCoursePanel.hide();
+        removeCoursePanel.hide();
         createAccountPanel.hide();
     }
     
@@ -40,20 +76,28 @@ public class PanelManager
             case CREATE_ACCOUNT:
                 createAccountPanel.hide();
                 break;
-            case MAIN_MENU:
-                //To do
+            case FACULTY:
+                facultyPanel.hide();
+                break;
+            case DEPARTMENT_CHAIR:
+                departmentChairPanel.hide();
+                break;
+            case REGISTRAR:
+                registrarPanel.hide();
                 break;
             case FILE_INPUT:
-                //To do
                 break;
-            case ADD_COURSE:
-                //To do
+            case ADD_COURSE_DEPARTMENT_CHAIR:
+                addCourseDepartmentChairPanel.hide();
+                break;
+            case ADD_COURSE_FACULTY:
+                addCourseFacultyPanel.hide();
                 break;
             case REMOVE_COURSE:
-                //To do
+                removeCoursePanel.hide();
                 break;
             case EDIT_COURSE:
-                //To do
+                editCoursePanel.hide();
                 break;
             case SCHEDULE_GENERATOR:
                 //To do
@@ -61,7 +105,13 @@ public class PanelManager
             case DEBUG:
                 loginPanel.hide();
                 createAccountPanel.hide();
-                
+                registrarPanel.hide();
+                editCoursePanel.hide();
+                addCourseDepartmentChairPanel.hide();
+                addCourseFacultyPanel.hide();
+                removeCoursePanel.hide();
+                departmentChairPanel.hide();
+                facultyPanel.hide();
         }
         
         
@@ -73,20 +123,29 @@ public class PanelManager
             case CREATE_ACCOUNT:
                 createAccountPanel.show();
                 break;
-            case MAIN_MENU:
-                //To do
-                break;
             case FILE_INPUT:
                 //To do
                 break;
-            case ADD_COURSE:
-                //To do
+            case ADD_COURSE_DEPARTMENT_CHAIR:
+                addCourseDepartmentChairPanel.show();
+                break;
+            case ADD_COURSE_FACULTY:
+                addCourseFacultyPanel.show();
+                break;
+            case DEPARTMENT_CHAIR:
+                departmentChairPanel.show();
+                break;
+            case FACULTY:
+                facultyPanel.show();
+                break;
+            case REGISTRAR:
+                registrarPanel.show();
                 break;
             case REMOVE_COURSE:
-                //To do
+                removeCoursePanel.show();
                 break;
             case EDIT_COURSE:
-                //To do
+                editCoursePanel.show();
                 break;
             case SCHEDULE_GENERATOR:
                 //To do
