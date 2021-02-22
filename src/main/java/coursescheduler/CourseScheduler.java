@@ -1,41 +1,18 @@
 package coursescheduler;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/** Entry-point for Course Scheduler system. */
-public class CourseScheduler {
-  public static void main(String[] args) {
-    /* Create and display the form */
-    java.awt.EventQueue.invokeLater(
-        new Runnable() {
-          public void run() {
-            new CourseSchedulerFrame().setVisible(true);
-          }
-        });
-=======
-/**
- * Entry-point for Course Scheduler system.
- */
-public class CourseScheduler {
-  public static void main(String[] args) {
->>>>>>> TSK-23 Setup Gradle Checkstyle formatting.
-  }
-=======
-/** Entry-point for Course Scheduler system. */
-public class CourseScheduler {
-<<<<<<< HEAD
+import coursescheduler.views.pages.LoginPage;
+import java.awt.CardLayout;
 
-  public static void main(String[] args) {}
->>>>>>> TSK-25 Gradle googleJavaFormat setup
-=======
-  public static void main(String[] args) {
-    /* Create and display the form */
-    java.awt.EventQueue.invokeLater(
-        new Runnable() {
-          public void run() {
-            new CourseSchedulerFrame().setVisible(true);
-          }
-        });
+/** Entry-point for the Course Scheduler desktop application. */
+class CourseScheduler {
+  private static void startApplication() {
+    CourseSchedulerFrame courseSchedulerFrame = new CourseSchedulerFrame();
+    courseSchedulerFrame.setLayout(new CardLayout());
+    PanelManager panelManager = new BasePanelManager(courseSchedulerFrame);
+    panelManager.updatePage(new LoginPage(panelManager));
   }
->>>>>>> TSK-29 Merge main branch via rebasing
+
+  public static void main(String[] args) {
+    startApplication();
+  }
 }

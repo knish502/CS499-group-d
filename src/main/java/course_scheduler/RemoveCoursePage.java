@@ -1,9 +1,11 @@
-package coursescheduler;
+package course_scheduler;
+
+import coursescheduler.PanelManager;
 
 /** @author evilc */
 public class RemoveCoursePage extends javax.swing.JPanel {
   String page = "REMOVE_COURSE";
-  PanelManager controller;
+  coursescheduler.PanelManager controller;
 
   public void setController(PanelManager input) {
     controller = input;
