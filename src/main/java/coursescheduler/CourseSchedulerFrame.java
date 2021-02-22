@@ -1,40 +1,15 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package coursescheduler;
 
-/** @author evilc */
+/** @author juwuanturnerhoward */
 public class CourseSchedulerFrame extends javax.swing.JFrame {
-  LoginPage loginPagePanel = new LoginPage();
-  createAccountJpanel createAccountPanel = new createAccountJpanel();
-  AddCourseDepartmentChair addCourseDepartmentChairPanel = new AddCourseDepartmentChair();
-  AddCoursePageFaculty addCourseFacultyPanel = new AddCoursePageFaculty();
-  DepartmentChairPage departmentChairPanel = new DepartmentChairPage();
-  RegistrarPage registrarPanel = new RegistrarPage();
-  EditCourse editCoursePanel = new EditCourse();
-  FacultyPage facultyPanel = new FacultyPage();
-  RemoveCoursePage removeCoursePanel = new RemoveCoursePage();
 
-  PanelManager controller =
-      new PanelManager(
-          loginPagePanel,
-          createAccountPanel,
-          addCourseDepartmentChairPanel,
-          addCourseFacultyPanel,
-          editCoursePanel,
-          registrarPanel,
-          facultyPanel,
-          departmentChairPanel,
-          removeCoursePanel);
-
-  /** Creates new form guiFrame */
+  /** Creates new form CourseScheduler */
   public CourseSchedulerFrame() {
-    add(loginPagePanel);
-    add(createAccountPanel);
-    add(addCourseDepartmentChairPanel);
-    add(addCourseFacultyPanel);
-    add(departmentChairPanel);
-    add(registrarPanel);
-    add(editCoursePanel);
-    add(facultyPanel);
-    add(removeCoursePanel);
     initComponents();
   }
 
@@ -46,50 +21,22 @@ public class CourseSchedulerFrame extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    jLabel1 = new javax.swing.JLabel();
-    debugCombo = new javax.swing.JComboBox<>();
-
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-    getContentPane().setLayout(new java.awt.FlowLayout());
 
-    jLabel1.setText("DEBUG:");
-    getContentPane().add(jLabel1);
-
-    debugCombo.setModel(
-        new javax.swing.DefaultComboBoxModel<>(
-            new String[] {
-              "LOGIN",
-              "CREATE_ACCOUNT",
-              "ADD_COURSE_DEPARTMENT_CHAIR",
-              "ADD_COURSE_FACULTY",
-              "REMOVE_COURSE",
-              "EDIT_COURSE",
-              "SCHEDULE_GENERATOR",
-              "INPUT_FILE",
-              "DEPARTMENT_CHAIR",
-              "FACULTY",
-              "REGISTRAR"
-            }));
-    debugCombo.addActionListener(
-        new java.awt.event.ActionListener() {
-          public void actionPerformed(java.awt.event.ActionEvent evt) {
-            debugComboActionPerformed(evt);
-          }
-        });
-    getContentPane().add(debugCombo);
+    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+        layout
+            .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 865, Short.MAX_VALUE));
+    layout.setVerticalGroup(
+        layout
+            .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 568, Short.MAX_VALUE));
 
     pack();
   } // </editor-fold>//GEN-END:initComponents
 
-  private void debugComboActionPerformed(
-      java.awt.event.ActionEvent evt) { // GEN-FIRST:event_debugComboActionPerformed
-    // TODO add your handling code here:
-    String nextPage = debugCombo.getSelectedItem().toString();
-    controller.switchPage("DEBUG", nextPage);
-  } // GEN-LAST:event_debugComboActionPerformed
-
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JComboBox<String> debugCombo;
-  private javax.swing.JLabel jLabel1;
   // End of variables declaration//GEN-END:variables
 }
