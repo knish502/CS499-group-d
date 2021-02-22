@@ -4,28 +4,24 @@ import java.util.Optional;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/** @author evilc */
+/** Manages {@linkplain JPanel panels} on a {@link JFrame}. */
 final class PanelManager implements PanelManagerI {
 
   private JPanel currentPage;
+
   private final JFrame courseSchedulerFrame;
 
-  /** @param courseSchedulerFrame */
+  /** @param courseSchedulerFrame frame for panels to be displayed on. */
   public PanelManager(JFrame courseSchedulerFrame) {
     this.courseSchedulerFrame = courseSchedulerFrame;
     currentPage = null;
   }
 
   @Override
-  public void updatePage(JPanel nextPage) {
-    Optional.ofNullable(currentPage)
-        .ifPresent(
-            page -> {
-              courseSchedulerFrame.remove(currentPage);
-            });
-    currentPage = nextPage;
+  public void updatePage(JPanel page) {
+    Optional.ofNullable(currentPage).ifPresent(courseSchedulerFrame::remove);
+    currentPage = page;
     courseSchedulerFrame.add(currentPage);
     courseSchedulerFrame.setVisible(true);
-    currentPage = nextPage;
   }
 }

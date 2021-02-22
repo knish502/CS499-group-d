@@ -3,7 +3,7 @@ package coursescheduler;
 import coursescheduler.views.pages.LoginPage;
 import java.awt.CardLayout;
 
-/** @author juwuanturnerhoward */
+/** Entry-point for the Course Scheduler desktop application. */
 class CourseScheduler {
   public static void main(String[] args) {
     CourseSchedulerFrame courseSchedulerFrame = new CourseSchedulerFrame();

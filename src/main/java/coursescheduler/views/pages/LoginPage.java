@@ -5,7 +5,7 @@ import com.google.common.base.Optional;
 import coursescheduler.PanelManagerI;
 import java.awt.event.KeyEvent;
 
-/** @author juwuanturnerhoward */
+/** {@link javax.swing.JPanel} login page for the Course Scheduler system. */
 public final class LoginPage extends javax.swing.JPanel {
   private enum Role {
     FACULTY("FACULTY"),
@@ -23,7 +23,6 @@ public final class LoginPage extends javax.swing.JPanel {
   // TODO: Add model (database) here.
   PanelManagerI panelManager;
 
-  /** Creates new form LoginPage */
   public LoginPage(PanelManagerI panelManager) {
     this.panelManager = panelManager;
     initComponents();

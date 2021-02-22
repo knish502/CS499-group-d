@@ -7,7 +7,6 @@ public final class AccountCreationPage extends javax.swing.JPanel {
 
   private final PanelManagerI panelManager;
 
-  /** Creates new form AccountCreationPage */
   public AccountCreationPage(PanelManagerI panelManager) {
     this.panelManager = panelManager;
     initComponents();

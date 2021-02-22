@@ -4,9 +4,8 @@ import coursescheduler.PanelManagerI;
 
 /** @author evilc */
 public final class RegistrarPage extends javax.swing.JPanel {
-  PanelManagerI panelManager;
+  private final PanelManagerI panelManager;
 
-  /** Creates new form RegistrarPage */
   public RegistrarPage(PanelManagerI panelManager) {
     this.panelManager = panelManager;
     initComponents();
