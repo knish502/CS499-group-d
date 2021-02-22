@@ -1,19 +1,11 @@
-package coursescheduler;
+package coursescheduler.pages;
 
 /** @author evilc */
 public class DepartmentChairPage extends javax.swing.JPanel {
-  String page = "DEPARTMENT_CHAIR";
-  PanelManager controller;
+  private final PanelManagerI panelManager;
 
-  public void setController(PanelManager input) {
-    controller = input;
-  }
-
-  public String returnPage() {
-    return page;
-  }
-
-  public DepartmentChairPage() {
+  public DepartmentChairPage(PanelManagerI panelManager) {
+    this.panelManager = panelManager;
     initComponents();
   }
 
@@ -39,6 +31,12 @@ public class DepartmentChairPage extends javax.swing.JPanel {
     jButton7 = new javax.swing.JButton();
 
     backToLoginButton.setText("Back to Login");
+    backToLoginButton.addMouseListener(
+        new java.awt.event.MouseAdapter() {
+          public void mousePressed(java.awt.event.MouseEvent evt) {
+            backToLoginButtonMousePressed(evt);
+          }
+        });
     backToLoginButton.addActionListener(
         new java.awt.event.ActionListener() {
           public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,6 +278,11 @@ public class DepartmentChairPage extends javax.swing.JPanel {
                             .addComponent(jButton7))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
   } // </editor-fold>//GEN-END:initComponents
+
+  private void backToLoginButtonMousePressed(
+      java.awt.event.MouseEvent evt) { // GEN-FIRST:event_backToLoginButtonMousePressed
+    panelManager.updatePage(new LoginPage(panelManager));
+  } // GEN-LAST:event_backToLoginButtonMousePressed
 
   private void scheduleGeneratorButtonActionPerformed(
       java.awt.event.ActionEvent evt) { // GEN-FIRST:event_scheduleGeneratorButtonActionPerformed

@@ -13,24 +13,11 @@ plugins {
     // plugin to add support for building a CLI application.
     id 'application'
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     // plugin to add support for quality checks on Java source files.
     id 'checkstyle'
 
     // plugin to add support for automatic formatting.
     id 'com.github.sherter.google-java-format' version '0.9'
-=======
-    // Apply the checkstyle plugin to add support for quality checks on Java source files.
-    id 'checkstyle'
->>>>>>> TSK-23 Setup Gradle Checkstyle formatting.
-=======
-    // plugin to add support for quality checks on Java source files.
-    id 'checkstyle'
-
-    // plugin to add support for automatic formatting.
-    id 'com.github.sherter.google-java-format' version '0.9'
->>>>>>> TSK-25 Gradle googleJavaFormat setup
 }
 
 repositories {
@@ -51,29 +38,6 @@ dependencies {
 application {
     // Define the main class for the application.
     mainClassName = 'coursescheduler.CourseScheduler'
-<<<<<<< HEAD
-}
-
-checkstyle {
-    // Set checkstyle version.
-    toolVersion '8.40';
-}
-
-checkstyleMain {
-    // Set checkstyleMain to run after verifyGoogleJavaFormat.
-    dependsOn(tasks.verifyGoogleJavaFormat)
-}
-
-checkstyleTest {
-    // Set checkstyleTest to run after verifyGoogleJavaFormat.
-    dependsOn(tasks.verifyGoogleJavaFormat)
-}
-
-verifyGoogleJavaFormat {
-    // Set verifyGoogleJavaFormat to run after googleJavaFormat.
-    dependsOn(tasks.googleJavaFormat)
-=======
->>>>>>> TSK-25 Gradle googleJavaFormat setup
 }
 
 checkstyle {

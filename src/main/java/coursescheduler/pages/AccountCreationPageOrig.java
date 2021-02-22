@@ -1,24 +1,18 @@
-package coursescheduler;
+package coursescheduler.pages;
 
 /** @author evilc */
-public class createAccountJpanel extends javax.swing.JPanel {
+public class AccountCreationPageOrig extends javax.swing.JPanel {
   String tempUsername = "";
   String tempEmail = "";
   String tempPassword = "";
   String tempRole = "";
-  PanelManager controller;
-  String page = "CREATE_ACCOUNT";
+
+  private final PanelManagerI panelManager;
+
   /** Creates new form createAccountJpanel */
-  public createAccountJpanel() {
+  public AccountCreationPageOrig(PanelManagerI panelManager) {
+    this.panelManager = panelManager;
     initComponents();
-  }
-
-  public void setController(PanelManager input) {
-    controller = input;
-  }
-
-  public String returnPage() {
-    return page;
   }
 
   /**
