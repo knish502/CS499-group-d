@@ -1,9 +1,24 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
 
+import com.google.common.base.Enums;
+import com.google.common.base.Optional;
+import coursescheduler.PanelManagerI;
 import java.awt.event.KeyEvent;
 
 /** @author juwuanturnerhoward */
-public class LoginPage extends javax.swing.JPanel {
+public final class LoginPage extends javax.swing.JPanel {
+  private enum Role {
+    FACULTY("FACULTY"),
+    REGISTRAR("REGISTRAR"),
+    CHAIR("CHAIR"),
+    DEAN("DEAN");
+
+    private final String role;
+
+    Role(String role) {
+      this.role = role;
+    }
+  }
 
   // TODO: Add model (database) here.
   PanelManagerI panelManager;
@@ -16,17 +31,24 @@ public class LoginPage extends javax.swing.JPanel {
 
   /** Method to simulate user logging in with password-less accounts. */
   private void login(String username, char[] password) {
-    // TODO: Add in Credentials logic/Pull credential data from database.
+    // TODO: Add in Credentials logic/Pull credential data from database to grab user w/ role.
 
-    switch (username) {
-      case "faculty":
+    Optional<Role> role = Enums.getIfPresent(Role.class, username);
+    if (!role.isPresent()) {
+      // TODO: Maybe throw an error. Roles should be locked from dropdown so shouldn't get error.
+    }
+
+    switch (role.get()) {
+      case FACULTY:
         panelManager.updatePage(new FacultyPage(panelManager));
         break;
-      case "chair":
+      case CHAIR:
         panelManager.updatePage(new DepartmentChairPage(panelManager));
         break;
-      case "registrar":
+      case REGISTRAR:
         panelManager.updatePage(new RegistrarPage(panelManager));
+        break;
+      case DEAN:
         break;
         // TODO: Add other login pages.
       default:

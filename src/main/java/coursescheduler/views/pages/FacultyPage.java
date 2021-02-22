@@ -1,8 +1,9 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
+
+import coursescheduler.PanelManagerI;
 
 /** @author evilc */
-public class FacultyPage extends javax.swing.JPanel {
-  String page = "FACULTY";
+public final class FacultyPage extends javax.swing.JPanel {
   PanelManagerI panelManager;
 
   public FacultyPage(PanelManagerI panelManager) {

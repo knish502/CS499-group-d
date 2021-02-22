@@ -1,5 +1,5 @@
-import coursescheduler.pages.LoginPage;
-import coursescheduler.pages.PanelManagerI;
+import coursescheduler.PanelManagerI;
+import coursescheduler.views.pages.LoginPage;
 import javax.swing.JButton;
 
 /*

@@ -1,7 +1,9 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
+
+import coursescheduler.PanelManagerI;
 
 /** @author evilc */
-public class DepartmentChairPage extends javax.swing.JPanel {
+public final class DepartmentChairPage extends javax.swing.JPanel {
   private final PanelManagerI panelManager;
 
   public DepartmentChairPage(PanelManagerI panelManager) {

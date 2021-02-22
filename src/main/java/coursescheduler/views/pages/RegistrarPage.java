@@ -1,7 +1,9 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
+
+import coursescheduler.PanelManagerI;
 
 /** @author evilc */
-public class RegistrarPage extends javax.swing.JPanel {
+public final class RegistrarPage extends javax.swing.JPanel {
   PanelManagerI panelManager;
 
   /** Creates new form RegistrarPage */

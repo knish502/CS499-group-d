@@ -6,7 +6,7 @@
 package coursescheduler;
 
 /** @author juwuanturnerhoward */
-public class CourseSchedulerFrame extends javax.swing.JFrame {
+class CourseSchedulerFrame extends javax.swing.JFrame {
 
   /** Creates new form CourseScheduler */
   public CourseSchedulerFrame() {

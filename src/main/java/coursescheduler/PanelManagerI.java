@@ -1,4 +1,4 @@
-package coursescheduler.pages;
+package coursescheduler;
 
 import javax.swing.JPanel;
 

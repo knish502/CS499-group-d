@@ -1,11 +1,11 @@
-package coursescheduler.pages;
+package coursescheduler;
 
 import java.util.Optional;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /** @author evilc */
-public final class PanelManager implements PanelManagerI {
+final class PanelManager implements PanelManagerI {
 
   private JPanel currentPage;
   private final JFrame courseSchedulerFrame;
