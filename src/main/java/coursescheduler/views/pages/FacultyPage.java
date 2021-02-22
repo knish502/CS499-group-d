@@ -4,7 +4,7 @@ import coursescheduler.PanelManagerI;
 
 /** @author evilc */
 public final class FacultyPage extends javax.swing.JPanel {
-  PanelManagerI panelManager;
+  private final PanelManagerI panelManager;
 
   public FacultyPage(PanelManagerI panelManager) {
     this.panelManager = panelManager;
