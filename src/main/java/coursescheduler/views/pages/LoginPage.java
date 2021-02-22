@@ -2,7 +2,7 @@ package coursescheduler.views.pages;
 
 import com.google.common.base.Enums;
 import com.google.common.base.Optional;
-import coursescheduler.PanelManagerI;
+import coursescheduler.PanelManager;
 import java.awt.event.KeyEvent;
 
 /** {@link javax.swing.JPanel} login page for the Course Scheduler system. */
@@ -21,9 +21,9 @@ public final class LoginPage extends javax.swing.JPanel {
   }
 
   // TODO: Add model (database) here.
-  PanelManagerI panelManager;
+  PanelManager panelManager;
 
-  public LoginPage(PanelManagerI panelManager) {
+  public LoginPage(PanelManager panelManager) {
     this.panelManager = panelManager;
     initComponents();
   }

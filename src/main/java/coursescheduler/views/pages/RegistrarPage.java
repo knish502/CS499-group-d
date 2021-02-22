@@ -1,12 +1,12 @@
 package coursescheduler.views.pages;
 
-import coursescheduler.PanelManagerI;
+import coursescheduler.PanelManager;
 
 /** @author evilc */
 public final class RegistrarPage extends javax.swing.JPanel {
-  private final PanelManagerI panelManager;
+  private final PanelManager panelManager;
 
-  public RegistrarPage(PanelManagerI panelManager) {
+  public RegistrarPage(PanelManager panelManager) {
     this.panelManager = panelManager;
     initComponents();
   }
