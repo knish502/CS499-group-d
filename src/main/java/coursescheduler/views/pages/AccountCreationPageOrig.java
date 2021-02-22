@@ -1,6 +1,6 @@
 package coursescheduler.views.pages;
 
-import coursescheduler.PanelManagerI;
+import coursescheduler.PanelManager;
 
 /** @author evilc */
 public final class AccountCreationPageOrig extends javax.swing.JPanel {
@@ -9,10 +9,10 @@ public final class AccountCreationPageOrig extends javax.swing.JPanel {
   String tempPassword = "";
   String tempRole = "";
 
-  private final PanelManagerI panelManager;
+  private final PanelManager panelManager;
 
   /** Creates new form createAccountJpanel */
-  public AccountCreationPageOrig(PanelManagerI panelManager) {
+  public AccountCreationPageOrig(PanelManager panelManager) {
     this.panelManager = panelManager;
     initComponents();
   }

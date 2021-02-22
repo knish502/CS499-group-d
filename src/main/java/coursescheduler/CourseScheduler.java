@@ -5,10 +5,14 @@ import java.awt.CardLayout;
 
 /** Entry-point for the Course Scheduler desktop application. */
 class CourseScheduler {
-  public static void main(String[] args) {
+  private static void startApplication() {
     CourseSchedulerFrame courseSchedulerFrame = new CourseSchedulerFrame();
     courseSchedulerFrame.setLayout(new CardLayout());
-    PanelManagerI panelManager = new PanelManager(courseSchedulerFrame);
+    PanelManager panelManager = new BasePanelManager(courseSchedulerFrame);
     panelManager.updatePage(new LoginPage(panelManager));
+  }
+
+  public static void main(String[] args) {
+    startApplication();
   }
 }
