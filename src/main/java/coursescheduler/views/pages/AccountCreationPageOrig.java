@@ -1,7 +1,9 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
+
+import coursescheduler.PanelManagerI;
 
 /** @author evilc */
-public class AccountCreationPageOrig extends javax.swing.JPanel {
+public final class AccountCreationPageOrig extends javax.swing.JPanel {
   String tempUsername = "";
   String tempEmail = "";
   String tempPassword = "";

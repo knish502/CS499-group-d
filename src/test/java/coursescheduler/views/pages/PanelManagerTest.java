@@ -1,4 +1,4 @@
-package coursescheduler.pages;
+package coursescheduler.views.pages;
 
 import org.junit.Before;
 import org.junit.Test;
