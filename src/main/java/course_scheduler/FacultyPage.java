@@ -9,8 +9,8 @@ package course_scheduler;
  *
  * @author evilc
  */
-public class DepartmentChairPage extends javax.swing.JPanel {
-    String page = "DEPARTMENT_CHAIR";
+public class FacultyPage extends javax.swing.JPanel {
+    String page = "FACULTY";
     PanelManager controller;
 
     public void setController(PanelManager input)
@@ -22,7 +22,8 @@ public class DepartmentChairPage extends javax.swing.JPanel {
     {
         return page;
     }
-    public DepartmentChairPage() {
+    
+    public FacultyPage() {
         initComponents();
     }
 
@@ -35,35 +36,20 @@ public class DepartmentChairPage extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backToLoginButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        editCourseButton = new javax.swing.JButton();
         scheduleGeneratorButton = new javax.swing.JButton();
         loadCSVFileButton = new javax.swing.JButton();
-        addCourseButton = new javax.swing.JButton();
-        removeCourseButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         currentCoursesTable = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
         saveCSVFileButton = new javax.swing.JButton();
+        addCourseButton = new javax.swing.JButton();
+        removeCourseButton = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-
-        backToLoginButton.setText("Back to Login");
-        backToLoginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backToLoginButtonActionPerformed(evt);
-            }
-        });
+        backToLoginButton = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Department Chair");
-
-        editCourseButton.setText("Edit Course");
-        editCourseButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editCourseButtonActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Faculty");
 
         scheduleGeneratorButton.setText("Schedule Generator");
         scheduleGeneratorButton.addActionListener(new java.awt.event.ActionListener() {
@@ -78,23 +64,6 @@ public class DepartmentChairPage extends javax.swing.JPanel {
                 loadCSVFileButtonActionPerformed(evt);
             }
         });
-
-        addCourseButton.setText("Add Course");
-        addCourseButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addCourseButtonActionPerformed(evt);
-            }
-        });
-
-        removeCourseButton.setText("Remove Course");
-        removeCourseButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removeCourseButtonActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Current Courses Loaded:");
 
         currentCoursesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -129,6 +98,9 @@ public class DepartmentChairPage extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(currentCoursesTable);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("Current Courses Loaded:");
+
         saveCSVFileButton.setText("Save as CSV File");
         saveCSVFileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,10 +108,31 @@ public class DepartmentChairPage extends javax.swing.JPanel {
             }
         });
 
+        addCourseButton.setText("Add Course");
+        addCourseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addCourseButtonActionPerformed(evt);
+            }
+        });
+
+        removeCourseButton.setText("Remove Course");
+        removeCourseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeCourseButtonActionPerformed(evt);
+            }
+        });
+
         jButton7.setText("Exit");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
+            }
+        });
+
+        backToLoginButton.setText("Back to Login");
+        backToLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backToLoginButtonActionPerformed(evt);
             }
         });
 
@@ -160,9 +153,7 @@ public class DepartmentChairPage extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(addCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(saveCSVFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addComponent(editCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
+                        .addGap(18, 18, 18)
                         .addComponent(removeCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
@@ -170,7 +161,7 @@ public class DepartmentChairPage extends javax.swing.JPanel {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton7))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 657, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,7 +170,6 @@ public class DepartmentChairPage extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(editCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(scheduleGeneratorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(removeCourseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -203,18 +193,6 @@ public class DepartmentChairPage extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_scheduleGeneratorButtonActionPerformed
 
-    private void addCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCourseButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addCourseButtonActionPerformed
-
-    private void editCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editCourseButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editCourseButtonActionPerformed
-
-    private void removeCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeCourseButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_removeCourseButtonActionPerformed
-
     private void loadCSVFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadCSVFileButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_loadCSVFileButtonActionPerformed
@@ -223,20 +201,27 @@ public class DepartmentChairPage extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_saveCSVFileButtonActionPerformed
 
-    private void backToLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backToLoginButtonActionPerformed
+    private void addCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCourseButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_backToLoginButtonActionPerformed
+    }//GEN-LAST:event_addCourseButtonActionPerformed
+
+    private void removeCourseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeCourseButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_removeCourseButtonActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void backToLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backToLoginButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backToLoginButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addCourseButton;
     private javax.swing.JButton backToLoginButton;
     private javax.swing.JTable currentCoursesTable;
-    private javax.swing.JButton editCourseButton;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
